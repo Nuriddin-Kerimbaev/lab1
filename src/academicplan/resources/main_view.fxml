@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="academicplan.ui.main.MainController">
+    <HBox layoutY="466.0" prefHeight="175.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <AnchorPane prefHeight="156.0" prefWidth="300.0">
+            <padding>
+                <Insets bottom="15.0" left="10.0" right="10.0" />
+            </padding>
+            <Label alignment="TOP_LEFT" text="Квалификация: бакалавр" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="10.0" />
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" text="Форма обучения: очная" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0" />
+            <Label text="Срок обучения: 4 года" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" />
+            <Label prefHeight="36.0" prefWidth="225.0" text="Направление: информационные системы и технологии" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0" />
+            <Label prefHeight="36.0" prefWidth="272.0" text="Программа: информационные системы и технологии в строительстве" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="110.0" />
+        </AnchorPane>
+        <AnchorPane prefHeight="156.0" prefWidth="251.0">
+            <HBox.margin>
+                <Insets left="50.0" />
+            </HBox.margin>
+            <padding>
+                <Insets left="10.0" right="10.0" />
+            </padding>
+            <Button fx:id="disciplinesButton" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="251.0" text="Дисциплины" AnchorPane.leftAnchor="0.0" />
+            <Button fx:id="practicesButton" layoutY="40.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="251.0" text="Практики" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" />
+            <Button fx:id="semestersButton" layoutY="65.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="251.0" text="Семестры" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="85.0" />
+        </AnchorPane>
+        <AnchorPane prefHeight="156.0" prefWidth="346.0">
+            <HBox.margin>
+                <Insets left="50.0" />
+            </HBox.margin>
+            <Button fx:id="searchButton" layoutX="44.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="251.0" text="Поиск" />
+        </AnchorPane>
+    </HBox>
+    <HBox fx:id="disciplinesPanel" prefHeight="420.0" prefWidth="1000.0" visible="false" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <ListView fx:id="disciplinesListView" prefHeight="410.0" prefWidth="720.0" />
+        <Button fx:id="openDisciplineButton" mnemonicParsing="false" text="Открыть">
+            <HBox.margin>
+                <Insets left="90.0" right="90.0" top="10.0" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+    <HBox fx:id="practicesPanel" visible="false" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <ListView fx:id="practicesListView" prefHeight="410.0" prefWidth="720.0" />
+    </HBox>
+    <HBox fx:id="semestersPanel" prefHeight="100.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <ListView fx:id="semestersListView" prefHeight="410.0" prefWidth="720.0" />
+        <Button fx:id="openSemesterButton" contentDisplay="CENTER" mnemonicParsing="false" text="Выбрать">
+            <HBox.margin>
+                <Insets left="85.0" right="85.0" top="10.0" />
+            </HBox.margin>
+        </Button>
+    </HBox>
+</AnchorPane>

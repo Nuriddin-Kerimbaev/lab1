@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="280.0" prefWidth="280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="academicplan.ui.discipline.DisciplineController">
+   <AnchorPane layoutX="15.0" layoutY="52.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="52.0">
+      <Label layoutX="0.0380859375" text="Лекции" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="0.0380859375" layoutY="26.0" text="Лабораторные" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <Label layoutX="0.0380859375" layoutY="57.0" text="Практические" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <Label layoutX="0.0380859375" layoutY="84.0" text="Трудоёмкость" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="75.0" />
+      <Label layoutX="0.0380859375" layoutY="110.0" text="Контроль" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="0.0380859375" layoutY="139.0" text="Курсовой" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="125.0" />
+   </AnchorPane>
+   <AnchorPane layoutX="125.0" layoutY="52.0" prefHeight="172.0" prefWidth="145.0" AnchorPane.leftAnchor="125.0">
+      <Label fx:id="lecturesLabel" text="1 пара в неделю" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="laboratoriesLabel" layoutY="33.0" text="1 пара в две недели" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="25.0" />
+      <Label fx:id="practicesLabel" layoutY="63.0" text="2 пары в неделю" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="50.0" />
+      <Label fx:id="trudoemkostLabel" layoutY="94.0" text="120 часов" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="75.0" />
+      <Label fx:id="controlLabel" layoutY="125.0" text="Экзамен" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0" />
+      <Label fx:id="courseWorkLabel" layoutY="156.0" text="Нет" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="125.0" />
+   </AnchorPane>
+</AnchorPane>
